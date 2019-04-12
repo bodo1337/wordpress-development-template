@@ -1,3 +1,5 @@
+version: '3.3'
+
 services:
   db:
     image: mysql:5.7
@@ -25,4 +27,4 @@ services:
       - ./wp-content:/var/www/html/wp-content
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 volumes:
-db_data:
+  db_data: {}
